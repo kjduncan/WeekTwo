@@ -1,0 +1,55 @@
+@media screen{
+/* Reset Body*/
+  body{
+    padding: 0;
+    margin: 0;
+  }
+
+/* header */
+  .header{
+    background-color: lightgreen;
+  }
+
+/* Content */
+  .content{
+    background-color: #ccc;
+    /*display:flex;*/
+  }
+
+/* (.content>div) Immediate descendents of content that are divs float left */
+  .content>div {
+    float: left;
+  }
+
+  .sidebar {
+    background-color: tan;
+    width: 25%;
+  }
+  .main {
+    background-color: #fff;
+    width: 50%;
+  }
+  .ads {
+    background-color: green;
+    width: 25%;
+  }
+
+
+/* Footer */
+  .footer{
+    background-color: lightblue;
+
+  }
+
+/* CLEAR FIX 'after' is a psuedo selector and doesn't add any content to the page*/
+  /* utility rules **in order to use the clear rule, you must apply it to a block level element*/
+  .clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+  }
+
+
+
+}
